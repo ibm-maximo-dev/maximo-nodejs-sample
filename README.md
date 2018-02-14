@@ -18,38 +18,27 @@ $ node -v
 $ git clone git@github.com:ibm-maximo-dev/maximo-nodejs-sample.git
 ```
 
-3. Install the express package in the maximo-nodejs-sample folder. 
+3. Install the required packages in the maximo-nodejs-sample folder. 
 
 ```
 $ cd maximo-nodejs-sample
-$ npm install express --save
+$ npm install
 ```
 
-4. Install the following packages: cookie-parser, express-session, q, fs, minimist, and ibm-maximo-api. 
-
-```
-$ npm install cookie-parser --save
-$ npm install express-session --save
-$ npm install q --save
-$ npm install fs --save
-$ npm install minimist --save
-$ npm install ibm-maximo-api --save
-```
-
-5. Launch the server.js file from a terminal window. The following optional arguments are for making the connection to the Maximo server: hostname (-h), port (-p), user (-u), password (-w), and islean (-l). Note that the defaults for each of these values can be changed in the server.js file. If you have errors at this point, try upgrading your version of Node. Also double check that you **do not** include "http://" on your host name when you try to connect.
+4. Launch the server.js file from a terminal window. The following optional arguments are for making the connection to the Maximo server: hostname (-h), port (-p), user (-u), password (-w), and islean (-l). Note that the defaults for each of these values can be changed in the server.js file. If you have errors at this point, try upgrading your version of Node. Also double check that you **do not** include "http://" on your host name when you try to connect.
 
 ```
 $ node server.js -h qasite.swg.usma.ibm.com -p 9080 -u username -w password -l 1
 ```
 
-6. Launch your browser with the localhost at the port in the file (default is 3000) with a route you would like to run. If you are running the update_WO route or the delete_WO route, you must first run the read_1_WO route. To run read_1_WO without an error, the WONUM must exist. The default WONUM in read_1_WO and create_WO is A123A. The suggested order to run the routes is /authenticate, /create_WO, /read_1_WO, /update_WO, and /delete_WO.
+5. Launch your browser with the localhost at the port in the file (default is 3000) with a route you would like to run. If you are running the update_WO route or the delete_WO route, you must first run the read_1_WO route. To run read_1_WO without an error, the WONUM must exist. The default WONUM in read_1_WO and create_WO is A123A. The suggested order to run the routes is /authenticate, /create_WO, /read_1_WO, /update_WO, and /delete_WO.
 
 ```
 http://localhost:3000/api/v1/authenticate
 ```
 
-7. When you are finished viewing or making changes with the current settings, press CTRL+C in your terminal to end the session.
-8. Make any changes to the work order details that you want to read, create, update, or delete in the NodeJS files, resave, and relaunch from step 5.
+6. When you are finished viewing or making changes with the current settings, press CTRL+C in your terminal to end the session.
+7. Make any changes to the work order details that you want to read, create, update, or delete in the NodeJS files, resave, and relaunch from step 5.
 
 ## Further enhancements
 
