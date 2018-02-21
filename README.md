@@ -92,5 +92,5 @@ To create an app that is similar to this one and that uses ibm-maximo-api, simpl
 For more information, see the following resources:
 
 * [IBM Asset Management Developer Center](https://developer.ibm.com/iot/asset-management/)
-* [ibm-maximo-api](https://github.com/sachbalag/ibm-maximo-api)
+* [ibm-maximo-api](https://github.com/ibm-maximo-dev/maximo-nodejs-rest-client)
 * [Maximo JSON API](https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/IBM%20Maximo%20Asset%20Management/page/Maximo%20JSON%20API)
