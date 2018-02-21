@@ -4,7 +4,7 @@
 
 Use these files to take advantage of Maximo APIs to create, read, update, and delete (CRUD) a work order in Maximo Asset Management. The `server.js` file contains all of the CRUD routes that are individually broken out into their own .js docs.
 
-This sample uses the []Maximo REST APIs for NodeJS](https://github.com/ibm-maximo-dev/maximo-nodejs-rest-client).
+This sample uses the [Maximo REST APIs for NodeJS](https://github.com/ibm-maximo-dev/maximo-nodejs-rest-client).
 
 ### Prerequisites
 
