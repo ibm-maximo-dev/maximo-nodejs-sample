@@ -1,12 +1,12 @@
-# maximo-nodejs-app
+# Node.js sample for IBM Maximo
 
-### Overview
+## Overview
 
 Use these files to take advantage of Maximo APIs to create, read, update, and delete (CRUD) a work order in Maximo Asset Management. The `server.js` file contains all of the CRUD routes that are individually broken out into their own .js docs.
 
 This sample uses the [Maximo REST APIs for NodeJS](https://github.com/ibm-maximo-dev/maximo-nodejs-rest-client).
 
-### Prerequisites
+## Prerequisites
 
 To use this application, you need to:
 * Ensure Node is installed. This app was made with Node v6.11.2, and most recently tested with v8.9.4.
@@ -17,7 +17,7 @@ To use this application, you need to:
 	
 * Have an instance of Maximo Asset Management 7.6 running
 
-### Getting started
+## Getting started
 
 * Download the JavaScript files and the package.json file that are found in this repository. If you can't use clone, just download the files into one folder. 
 
@@ -38,7 +38,7 @@ This sample shows how to use the NodeJS apis by starting a local web server, and
 
 This sample does not have a web UI, but rather, the browser is used a means to interact with the NodeJS sample code.
 
-#### Launch server.js
+### Launch server.js
 
 Launch the server.js file from a terminal window. The following *optional* arguments are for making the connection to the Maximo server: `hostname` `(-h)`, `port` `(-p)`, `user` `(-u)`, `password` `(-w)`, and `islean` `(-l)`. Note that the defaults for each of these values can be changed in the `server.js` file. Also double check that you **do not** include "http://" on your host name when you try to connect.
 
@@ -54,7 +54,7 @@ Maximo Node API server is running on port 3000
 API version is v1
 ```
 
-#### Launch your browser
+### Launch your browser
  
 Launch your browser with the localhost at the port in the file (default set in server.js is 3000) with a route you would like to run. A good first route to test is /authenticate. If non-empty {} are returned in your browser and no errors are in the console, then you are on the right track.
 
@@ -71,7 +71,7 @@ Notes about the routes:
 * To run `read_1_WO` without an error, the `WONUM` must exist. The default `WONUM` in `read_1_WO` and `create_WO` is `A123A`. 
 * To run the `update_WO` route or the `delete_WO` route, you must first run the `read_1_WO` route. 
 
-#### Close the session
+### Close the session
 
 When you are finished viewing or making changes to your work orders and with the current settings, press CTRL+C in your terminal to end the session.
 
@@ -87,10 +87,18 @@ Another possible customization is to allow another argument to be passed in to u
 
 To create an app that is similar to this one and that uses ibm-maximo-api, simply create the outlines of a node.js app with a package.json file and start by installing the express and ibm-maximo-api packages. 
 
-### References
+
+## Give us your feedback
+Let us know your opinion of this sample by completing this short (3 minute) survey.
+
+[Node.js sample feedback](https://www.surveygizmo.com/s3/4254716/Maximo-DevCenter-Node-js-sample-feedback)
+
+## References
 
 For more information, see the following resources:
 
-* [IBM Asset Management Developer Center](https://developer.ibm.com/iot/asset-management/)
+* [IBM Maximo Developer Center](http://developer.ibm.com/assetmanagement/)
 * [ibm-maximo-api](https://github.com/ibm-maximo-dev/maximo-nodejs-rest-client)
 * [Maximo JSON API](https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/IBM%20Maximo%20Asset%20Management/page/Maximo%20JSON%20API)
+
+© Copyright IBM Corporation 2018
